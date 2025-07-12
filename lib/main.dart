@@ -1,4 +1,5 @@
 import 'package:crevel_update/core/theme/app_theme_data.dart';
+import 'package:crevel_update/features/profilo/view/protfilo_screen.dart';
 import 'package:flutter/material.dart';
 import 'features/home_screen/view/home_screen.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppThemeData.myThemeData,
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: ProtfiloScreen(),
     );
   }
 }

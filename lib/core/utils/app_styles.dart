@@ -4,7 +4,7 @@ import 'app_colors.dart';
 
 class AppStyle {
   static TextStyle cardStyle = const TextStyle(
-    fontSize: 25,
+    fontSize: 23,
     color: AppColors.whiteColor,
   );
   static TextStyle titleLarge = const TextStyle(
@@ -13,6 +13,6 @@ class AppStyle {
   );
   static TextStyle bodySmall = const TextStyle(
     fontSize: 8,
-    color: AppColors.greyColor,
+    color: Colors.grey,
   );
 }
