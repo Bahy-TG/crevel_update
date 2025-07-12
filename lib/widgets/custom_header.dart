@@ -1,8 +1,8 @@
 import 'package:crevel_update/widgets/custom_icon_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../core/utils/app_colors.dart';
-import 'custom_social_icon.dart';
+
 
 class CustomHeader extends StatelessWidget {
   const CustomHeader({super.key});
@@ -44,13 +44,10 @@ class CustomHeader extends StatelessWidget {
                       const SizedBox(height: 16),
                       Row(
                         children: const [
-                          CustomIconButton(icon: Icons.facebook),
-                          SizedBox(width: 5),
-                          CustomIconButton(icon: Icons.facebook),
-                          SizedBox(width: 5),
-                          CustomIconButton(icon: Icons.email),
-                          SizedBox(width: 5),
-                          CustomIconButton(icon: Icons.not_listed_location_outlined),
+                          CustomIconButton(icon: FontAwesomeIcons.facebook),
+                          CustomIconButton(icon:FontAwesomeIcons.instagram),
+                          CustomIconButton(icon: FontAwesomeIcons.twitter),
+                          CustomIconButton(icon: FontAwesomeIcons.locationArrow),
                         ],
                       ),
                     ],

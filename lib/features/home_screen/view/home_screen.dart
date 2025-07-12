@@ -5,7 +5,7 @@ import '../../../core/utils/app_colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
+  static String routeName = '/home_screen';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

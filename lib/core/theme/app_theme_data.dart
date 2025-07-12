@@ -9,6 +9,10 @@ class AppThemeData {
     ),
     primaryColor: AppColors.primaryColor,
     appBarTheme: const AppBarTheme(
+      titleTextStyle: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 25
+      ),
       iconTheme: IconThemeData(color: AppColors.whiteColor),
       backgroundColor: Colors.transparent,
       elevation: 0,
@@ -30,9 +34,8 @@ class AppThemeData {
         color: AppColors.blackColor,
       ),
       bodySmall: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-        color: AppColors.blackColor,
+        fontSize: 16,
+        color: AppColors.whiteColor,
       ),
       titleLarge: TextStyle(
         fontSize: 30,
@@ -48,6 +51,7 @@ class AppThemeData {
         fontSize: 20,
         color: AppColors.lightPrimary,
       ),
+
     ),
   );
 }
