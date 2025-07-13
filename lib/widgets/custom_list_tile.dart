@@ -5,8 +5,16 @@ import '../core/utils/app_colors.dart';
 class CustomListTile extends StatelessWidget {
   final IconData icon;
   final String title;
+  final BuildContext context;
+  final String routeName;
 
-  const CustomListTile({super.key, required this.icon, required this.title});
+  const CustomListTile({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.context,
+    required this.routeName,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +22,7 @@ class CustomListTile extends StatelessWidget {
       leading: Icon(icon, color: AppColors.lightPrimary),
       title: Text(title, style: Theme.of(context).textTheme.titleSmall),
       onTap: () {
-        Navigator.pop(context);
+        Navigator.pushNamed(context, routeName);
         // Navigate to settings screen
       },
     );

@@ -1,8 +1,11 @@
 import 'dart:ui' as ui;
+import 'package:animated_text_kit/animated_text_kit.dart';
+
 import '../../../core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/app_colors.dart';
+import '../../../core/utils/app_styles.dart';
 
 class AboutUsScreen extends StatelessWidget {
   const AboutUsScreen({super.key});
@@ -71,22 +74,31 @@ Join us on our journey to make a positive impact in the digital world.
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    'Discover Our Story',
-                    style: TextStyle(
-                      fontSize: isWideScreen ? 30 : 26,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.whiteColor,
-                      height: 1.3,
-                      shadows: [
-                        Shadow(
-                          blurRadius: 5.0,
-                          color: AppColors.blackColor.withOpacity(0.5),
-                          offset: const Offset(1.0, 1.0),
+                  SizedBox(
+                      width: 300,
+                      child: DefaultTextStyle(
+                        style: TextStyle(
+                            fontSize: isWideScreen ? 30 : 26,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.whiteColor,
+                            height: 1.3,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 5.0,
+                                color: AppColors.blackColor.withOpacity(0.5),
+                                offset: const Offset(1.0, 1.0),
+                              ),
+                            ],
+                          ),
+                        child: AnimatedTextKit(
+                          animatedTexts: [
+                            TypewriterAnimatedText('Discover Our Story'),
+
+                          ],
+                          repeatForever: true,
                         ),
-                      ],
-                    ),
-                  ),
+                      ),
+                      ),
                   const SizedBox(height: 8),
                   Container(
                     height: 3,

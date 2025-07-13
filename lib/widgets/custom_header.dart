@@ -14,7 +14,7 @@ class CustomHeader extends StatelessWidget {
       child: Column(
         children: [
           Container(
-           padding: EdgeInsets.only(left: 16,top: 16),
+           padding: EdgeInsets.only(left: 16,top: 50),
             child: Row(
 
               crossAxisAlignment: CrossAxisAlignment.center,

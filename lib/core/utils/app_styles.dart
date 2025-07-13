@@ -13,6 +13,15 @@ class AppStyle {
   );
   static TextStyle bodySmall = const TextStyle(
     fontSize: 8,
-    color: Colors.grey,
+    color: AppColors.greyColor,
   );
+  static TextStyle titleStyle = TextStyle(
+    fontSize: 25,
+    color: AppColors.lightPrimary,
+  );
+  static TextStyle bodyLarge = const TextStyle(
+      fontSize: 17,
+      fontWeight: FontWeight.w300,
+      color: AppColors.whiteColor,
+      );
 }
